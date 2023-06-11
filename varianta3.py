@@ -39,7 +39,6 @@ class AuthApp:
             messagebox.showerror("Eroare", "Vă rugăm să completați toate câmpurile!")
             return
 
-        # Aici adăugați codul pentru înregistrare, cum doriți să stocați datele utilizatorilor
 
         messagebox.showinfo("Înregistrare", "Înregistrare reușită!")
 
@@ -54,15 +53,15 @@ class AuthApp:
             messagebox.showerror("Eroare", "Vă rugăm să completați toate câmpurile!")
             return
 
-        # Aici adăugați codul pentru autentificare, cum doriți să verificați datele utilizatorilor
+       
 
         messagebox.showinfo("Autentificare", "Autentificare reușită!")
 
-        # Dacă autentificarea este reușită, puteți crea o instanță a aplicației de catalog și să o rulați
+        
         catalog_app = CatalogApp()
         catalog_app.run()
 
-        # Închideți fereastra de autentificare după ce aplicația de catalog se închide
+       
         self.root.destroy()
 
     def run(self):
@@ -190,8 +189,7 @@ class Catalog:
         self.catalog.append(student)
 
     def calculeaza_medie(self, nota):
-        # Aici puteți implementa logica de calcul a mediei pe baza notelor
-        # Exemplu: medie = sum(nota) / len(nota)
+       
         return nota
 
     def get_catalog(self):
